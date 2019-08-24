@@ -3,15 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5e812332-25bf-4db3-a523-96cddafecedb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/mian.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/mian.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crawel/query_crawel.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawel/query_crawel.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/data.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/data.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/global/global_err.go" beforeDir="false" afterPath="$PROJECT_DIR$/global/global_err.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/article_info.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/article_info.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myhttp/crawel_http.go" beforeDir="false" afterPath="$PROJECT_DIR$/myhttp/crawel_http.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/http_util.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/http_util.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

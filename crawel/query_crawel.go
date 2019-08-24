@@ -7,6 +7,7 @@ import (
 	"blogs_crawler/util"
 	"log"
 	"strings"
+
 	"github.com/PuerkitoBio/goquery"
 )
 
