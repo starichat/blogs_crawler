@@ -1,11 +1,11 @@
 package main
 
-import "crawel/crawel"
+import "blogs_crawler/crawel"
 
 func main() {
-	//url := "http://gityuan.com/archive/"
-	url1 := "https://blog.csdn.net/Innost"
+	url := "http://gityuan.com/archive/"
+	//url1 := "https://blog.csdn.net/Innost"
 
-	//crawel.Getartices(url)
-	crawel.GetarticesForCSDN(url1)
+	crawel.Getartices(url)
+	//crawel.GetarticesForCSDN(url1)
 }

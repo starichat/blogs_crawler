@@ -11,16 +11,27 @@ go + goquery + colly + mysql + bootstrap + jquery
 -  实现自动分页获取数据的能力
 -  使用协程并发爬取并控制并发数量同时定时爬取
 -  前端页面展示
-2.基于goquery的网页爬取实现
+
+## 开发流程
+1. 分析要获取的数据以及要展示的效果，最终简单抽取出要获取如下表格的数据展示
+
+|Id | 文章名称 | 文章url地址 |
+|:---:|:---:|:---:|
+| 01 | 基于Goland的blogs爬虫项目|http://starichat.pro/*****|
+
+基于此设计数据库sql语句如下：
+```cassandraql
+
+CREATE DATABASE IF NOT EXISTS `blogs_crawler` DEFAULT CHARACTER SET utf8mb4;
+
+USE `blogs_crawler`;
+
+CREATE TABLE IF NOT EXISTS `article_info` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+  `name` varchar(255) NOT NULL DEFAULT '' COMMENT '文章名称',
+  `url` varchar(255) NOT NULL DEFAULT '' COMMENT '文章url',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COMMENT='文章信息表';
+```
 
 
-func WithRequest(url string) (*http.Response,error) {
-	req, err := http.NewRequest("GET",url,nil)
-	if err != nil{
-		return nil,err
-		}
-	req.Header.Set("User-Agent",
-		"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.87 Safari/537.36")
-	log.Print("Success Set Header")
-	return http.DefaultClient.Do(req)
-}

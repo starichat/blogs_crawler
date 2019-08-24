@@ -1,10 +1,10 @@
 package dao
 
 import (
-	"crawel/global"
-	"crawel/model"
+	"blogs_crawler/global"
+	"blogs_crawler/model"
 	"database/sql"
-	"fmt"
+	"log"
 	"strings"
 
 	_ "github.com/go-sql-driver/mysql"
@@ -12,16 +12,16 @@ import (
 
 // 爬去结果存入数据库
 func InsertData(info *model.ArticleInfo) {
-	db, err := sql.Open("mysql", "root:root@/android_blogs?charset=utf8")
+	db, err := sql.Open("mysql", "root:111111Aa@/blogs_crawler?charset=utf8")
 	global.CheckErr(err)
 	defer func() {
-		fmt.Println("close")
+		log.Println("close database")
 		db.Close()
 	}()
 	sql := "INSERT INTO article_info(name,url) VALUES(?,?)"
-	fmt.Println(strings.TrimSpace(info.Name))
+	log.Println(strings.TrimSpace(info.Name))
 	result, err := db.Exec(sql, strings.TrimSpace(info.Name), strings.TrimSpace(info.Url))
 	global.CheckErr(err)
 	id, _ := result.LastInsertId()
-	fmt.Println(id)
+	log.Println(id)
 }

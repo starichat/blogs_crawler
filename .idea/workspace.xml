@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e812332-25bf-4db3-a523-96cddafecedb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/blogs_crawler.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/mian.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/mian.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawel/query_crawel.go" beforeDir="false" afterPath="$PROJECT_DIR$/crawel/query_crawel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/data.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/data.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/global/global_err.go" beforeDir="false" afterPath="$PROJECT_DIR$/global/global_err.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/article_info.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/article_info.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myhttp/crawel_http.go" beforeDir="false" afterPath="$PROJECT_DIR$/myhttp/crawel_http.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/http_util.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/http_util.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +36,7 @@
   <component name="ProjectId" id="1PpXNCeCz0Jj1jx4wykWHwlN9Xw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -50,6 +55,22 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="go build blogs_crawler/cmd" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="blogs_crawler" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/cmd/mian.go" />
+      <package value="blogs_crawler/cmd" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build blogs_crawler/cmd" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -58,7 +79,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
